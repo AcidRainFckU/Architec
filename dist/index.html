@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+  />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Ubuntu:wght@300;400;500&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/style.min.css" />
+  <title>ABKStudio</title>
+</head>
+
+  <body>
+    <header class="header fixed w-screen z-9999 container transformx-center">
+  <div
+    class="header__container flex justyfy-between align-center w-full ml-auto"
+  >
+    <a href="/" class="logo">
+      <img src="img/logo.png" alt="ABKSTUDIO" />
+    </a>
+    <div class="menu flex justyfy-between w-full">
+      <a href="#" class="menu__item">О НАС</a>
+      <a href="#" class="menu__item">ПРОЕКТЫ</a>
+      <a href="#" class="menu__item">УСЛУГИ</a>
+      <a href="#" class="menu__item">СТОИМОСТЬ</a>
+      <a href="#" class="menu__item">КОНТАКТЫ</a>
+    </div>
+    <a class="phone" href="tel:+79811593110">+7-981-159-31-10</a>
+  </div>
+</header>
+ <aside class="contacts-buttons fixed z-9999">
+  <div class="contacts-buttons__container">
+    <div class="aside-contact__button cursor-pointer chat flex">
+      <img
+        class="m-auto"
+        src="img/aside__person.svg"
+        alt="chat"
+        id="asideChat"
+      />
+    </div>
+    <div class="aside-contact__button cursor-pointer phone-call flex">
+      <img
+        class="m-auto"
+        src="img/aside__phone.svg"
+        alt="phone-call"
+        id="asideCall"
+      />
+    </div>
+  </div>
+</aside>
+
+    <main>
+      <section class="main-section">
+  <div class="parallax">
+    <div class="parallax__layer" id="parallax-0" data-speed="30"></div>
+    <div
+      class="parallax__layer flex align-center"
+      id="parallax-1"
+      data-speed="50"
+    >
+      <div class="container">
+        <div class="main-section__text flex align-center">
+          <div class="vk-link w-full flex flex-center">
+            <a
+              class="vk-link__container flex flex-center"
+              href="https://vk.com"
+            >
+              Follow us
+              <img src="img/vk.svg" alt="Вконтакте" />
+            </a>
+          </div>
+
+          <h1 class="title title-h1 w-full">
+            АВТОРСКОЕ
+            <span class="title__span title__span--up title__span--e8"
+              >ПРЕМИАЛЬНОЕ</span
+            >
+            АРХИТЕКТУРНОЕ ПРОЕКТИРОВАНИЕ
+            <span class="title__span title__span--e9"
+              >от концепции до реализации</span
+            >
+          </h1>
+        </div>
+      </div>
+    </div>
+    <div class="parallax__layer" id="parallax-2" data-speed="85"></div>
+    <div class="parallax__layer" id="parallax-3" data-speed="65">
+      <div class="buttons z-900 w-full">
+        <a
+          href="#"
+          class="button button--blue main-section__button transformx-center absolute button--15radius"
+          >РАССЧИТАТЬ СТОИМОСТЬ ВАШЕГО ДОМА</a
+        >
+        <a href="#" class="arrow transformx-center absolute">
+          <p>ПОСМОТРИТЕ НАШИ РАБОТЫ</p>
+          <img src="img/arrow.svg" alt="посмотрите на работы" />
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <div class="main__content w-full">
+        <section class="section about">
+  <div class="container relative">
+    <img src="img/lines.png" class="img-background absolute z-100" />
+    <h2 class="title title-h2 relative z-200">АРХИТЕКТУРНОЕ БЮРО</h2>
+    <div class="about__container m-auto relative z-200 flex justyfy-between">
+      <div class="about__text">
+        <h2 class="title title-h2 title--white">
+          ABK <span class="title--white__span">studio</span>
+        </h2>
+        <p class="text">
+          <span>
+            Архитектурное бюро ABK studio (Архитектурное Бюро Краснова) -
+            молодое, современное проектное бюро. Наша команда - это семья, и
+            наши клиенты являются ее частью. Мы используем нашу
+            индивидуальность, наш опыт и наше уникальное видение архитектуры. Мы
+            всегда стремимся учиться и улучшать то, что было раньше, с целью
+            обеспечения высочайшего качества архитектуры.</span
+          >
+          <span
+            >Наши проекты основаны на диалоге, основанном на глубоком понимании
+            потребностей и видений наших клиентов. Мы используем технологии,
+            знания и любознательный характер для предоставления
+            высококачественных проектов и услуг нашим клиентам.</span
+          >
+        </p>
+      </div>
+      <div class="about__img flex relative">
+        <img
+          src="img/aboutPhoto.png"
+          alt="Основатель"
+          class="absolute image"
+        />
+        <div class="absolute shadow"></div>
+        <p class="img-container__text ml-auto mt-auto relative">
+          КРАСНОВ НИКИТА <span class="text__span">Основатель ABK studio</span>
+        </p>
+      </div>
+    </div>
+    <a
+      href="#"
+      class="button about__button button--15radius button--blue mx-auto relative z-300"
+      >ЗАДАТЬ ВОПРОС ЛИЧНО
+    </a>
+  </div>
+</section>
+ <section class="section mission absolute-after absolute-before">
+  <div class="container">
+    <h2 class="title title-h2 mission__title">Миссия</h2>
+    <p class="mission__text m-auto w-full">
+      В осознанном подходе к формированию жилой среды. Мы помогаем выстроить
+      гармонию комфорта вокруг индивидуальности. Мы создаем не дома и интерьеры,
+      а персональные экосистемы, полностью синхронизированные с образом жизни
+      владельцев.
+    </p>
+  </div>
+</section>
+
+        <section class="cases section">
+  <div class="container">
+    <h2 class="title title-h2 cases__title">НАШИ РАБОТЫ</h2>
+    <div class="cases__container mx-auto">
+      <div class="case__item flex justyfy-between absolute-after relative">
+        <div class="swiper case__slider case__slider-first">
+          <div class="swiper-wrapper slider-first__wrapper">
+            <div class="swiper-slide slider-first__slide">
+              <img src="img/sldie1.jpg" alt="case_photo" />
+            </div>
+            <div class="swiper-slide slider-first__slide">
+              <img src="img/sldie1.jpg" alt="case_photo" />
+            </div>
+            <div class="swiper-slide slider-first__slide">
+              <img src="img/sldie1.jpg" alt="case_photo" />
+            </div>
+          </div>
+          <div class="swiper-pagination slider-first__pagination"></div>
+        </div>
+        <div class="case__text-container">
+          <div class="text-container__title relative w-full flex align-center">
+            <img src="img/lines.png" class="lines absolute" />
+            <h3 class="title title-h4 case__title">МОСКВА. НОВАЯ РИГА</h3>
+          </div>
+          <ul class="text-container__description">
+            <li class="description__item">Вилла в стиле БАРНХАУС</li>
+            <li class="description__item">Площадь - 1 200 м2</li>
+          </ul>
+        </div>
+      </div>
+
+      <!--  -->
+      <div class="case__item flex justyfy-between absolute-after relative">
+        <div class="swiper case__slider case__slider-second">
+          <div class="swiper-wrapper slider-second__wrapper">
+            <div class="swiper-slide slider-second__slide">
+              <img src="img/sldie2.jpg" alt="case_photo" />
+            </div>
+            <div class="swiper-slide slider-second__slide">
+              <img src="img/sldie2.jpg" alt="case_photo" />
+            </div>
+            <div class="swiper-slide slider-second__slide">
+              <img src="img/sldie2.jpg" alt="case_photo" />
+            </div>
+          </div>
+          <div class="swiper-pagination slider-second__pagination"></div>
+        </div>
+        <div class="case__text-container">
+          <div class="text-container__title relative w-full flex align-center">
+            <img src="img/lines.png" class="lines absolute" />
+            <h3 class="title title-h4 case__title">МОСКВА. НОВАЯ РИГА</h3>
+          </div>
+          <ul class="text-container__description">
+            <li class="description__item">Вилла в стиле БАРНХАУС</li>
+            <li class="description__item">Площадь - 1 200 м2</li>
+          </ul>
+        </div>
+      </div>
+      <!--  -->
+      <div class="case__item flex justyfy-between absolute-after relative">
+        <div class="swiper case__slider case__slider-third">
+          <div class="swiper-wrapper slider-third__wrapper">
+            <div class="swiper-slide slider-third__slide">
+              <img src="img/sldie3.jpg" alt="case_photo" />
+            </div>
+            <div class="swiper-slide slider-third__slide">
+              <img src="img/sldie3.jpg" alt="case_photo" />
+            </div>
+            <div class="swiper-slide slider-third__slide">
+              <img src="img/sldie3.jpg" alt="case_photo" />
+            </div>
+          </div>
+          <div class="swiper-pagination slider-third__pagination"></div>
+        </div>
+        <div class="case__text-container">
+          <div class="text-container__title relative w-full flex align-center">
+            <img src="img/lines.png" class="lines absolute" />
+            <h3 class="title title-h4 case__title">МОСКВА. НОВАЯ РИГА</h3>
+          </div>
+          <ul class="text-container__description">
+            <li class="description__item">Вилла в стиле БАРНХАУС</li>
+            <li class="description__item">Площадь - 1 200 м2</li>
+          </ul>
+        </div>
+      </div>
+      <!--  -->
+      <div class="case__item flex justyfy-between absolute-after relative">
+        <div class="swiper case__slider case__slider-fourth">
+          <div class="swiper-wrapper slider-fourth__wrapper">
+            <div class="swiper-slide slider-fourth__slide">
+              <img src="img/sldie1.jpg" alt="case_photo" />
+            </div>
+            <div class="swiper-slide slider-fourth__slide">
+              <img src="img/sldie1.jpg" alt="case_photo" />
+            </div>
+            <div class="swiper-slide slider-fourth__slide">
+              <img src="img/sldie1.jpg" alt="case_photo" />
+            </div>
+          </div>
+          <div class="swiper-pagination slider-fourth__pagination"></div>
+        </div>
+        <div class="case__text-container">
+          <div class="text-container__title relative w-full flex align-center">
+            <img src="img/lines.png" class="lines absolute" />
+            <h3 class="title title-h4 case__title">МОСКВА. НОВАЯ РИГА</h3>
+          </div>
+          <ul class="text-container__description">
+            <li class="description__item">Вилла в стиле БАРНХАУС</li>
+            <li class="description__item">Площадь - 1 200 м2</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ <section class="section workStages">
+  <div class="container">
+    <h2 class="title title-h2 stages__title">Этапы работы</h2>
+    <div class="stages__container w-full">
+      <div class="stage w-full absolute-before">
+        <div class="stage___container w-full flex justyfy-between">
+          <div class="stage__title">
+            <div class="title__container flex align-center">
+              <p class="stage__count relative flex align-center justyfy-end">
+                <img src="img/lines.png" class="lines absolute" />
+                1
+              </p>
+              <div class="title title-h3">ЗНАКОМСТВО</div>
+            </div>
+          </div>
+          <div class="stage-text___container flex direction-col">
+            <p class="stage__text">
+              В нашем архитектурным бюро Подготовительные работы над проектом
+              начинаются еще до подписания договора. После первоначального
+              выезда на будущую строительную площадку, мы детально обсуждаем с
+              заказчиком все его требования и пожелания к будущему объекту.
+              Очень важно в этот момент понять и стилистические предпочтения
+              наших будущих клиентов. Зачастую в ходе этих бесед мы помогаем
+              заказчику лучше сориентироваться в том, что он может получить в
+              результате реализации проекта и точнее сформулировать задание на
+              проектирование. Это задание, которое мы оформляем как приложение к
+              договору, и является нашей путеводной нитью в последующей работе.
+              В состав работ на подготовительном этапе входят: Сбор
+              исходно-разрешительной документации (получение информации о
+              существующих инженерных коммуникаций и конструкциях когда
+              предстоит работать над интерьерами или ситуационные планы,
+              результаты геологических изысканий и топографической съемки, планы
+              инженерных сетей когда нам предстоит проектирование здания).
+              Фотофиксация и визуальный осмотр. Составление задания на
+              проектирование. Составление договора на проектные работы и
+              необходимые приложения к договору. Вся информация собирается очень
+              тщательно т.к. она влияет и на правильное составление пакета
+              документов и на последующие проектные решения. Что бы они были
+              оптимальными нужно учитывать все даже мелкие детали и размеры.
+            </p>
+            <input
+              class="text__button cursor-pointer ml-auto"
+              type="button"
+              value="Раскрыть"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="stage w-full absolute-before">
+        <div class="stage___container w-full flex justyfy-between">
+          <div class="stage__title flex align-center">
+            <div class="title__container flex align-center">
+              <p class="stage__count relative flex align-center justyfy-end">
+                <img src="img/lines.png" class="lines absolute" />
+                2
+              </p>
+              <div class="title title-h3">
+                ЭСКИЗНЫЙ ПРОЕКТ
+                <span class="title-h3__span">от 1 500 р./м2</span>
+              </div>
+            </div>
+          </div>
+          <div class="stage-text___container flex direction-col">
+            <p class="stage__text">
+              На основании результатов подготовительного этапа работ начинается
+              этап эскизного проектирования. Это самый интересный и
+              увлекательный для наших заказчиков этап работы над проектом.
+              Проектирование продолжается до той поры, пока не возникает
+              уверенность, что все придумано оптимально. Процесс проектирования
+              предельно живой. Специалисты нашего архитектурного бюро находятся
+              в постоянном контакте с заказчиком: показывают эскизы, обсуждают
+              варианты, помогают определиться с их выбором. Результатом этой
+              работы является эскизный проект, который оформляется в альбом. В
+              состав альбома входят изображения, которые дают представление об
+              объекте, который мы спроектировали. Состав проекта в разных
+              случаях может быть разный, вот это его примерный состав: Жилые и
+              общественные интерьеры Обмерные чертежи существующего положения;
+              Планы с расстановкой мебели и оборудования; Перспективные
+              изображения основных помещений (чертежи или 3D визуализации);
+              Необходимые развертки (разрезы) стен. Здания и сооружения Генплан
+              участка; Поэтажные планы с расстановкой мебели и оборудования;
+              Фасады; Разрезы; План кровли; Визуализация внешнего вида здания.
+            </p>
+            <input
+              class="text__button cursor-pointer ml-auto"
+              type="button"
+              value="Раскрыть"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="stage w-full absolute-before">
+        <div class="stage___container w-full flex justyfy-between">
+          <div class="stage__title flex align-center">
+            <div class="title__container flex align-center">
+              <p class="stage__count relative flex align-center justyfy-end">
+                <img src="img/lines.png" class="lines absolute" />
+                3
+              </p>
+              <div class="title title-h3">
+                РАБОЧИЙ ПРОЕКТ
+                <span class="title-h3__span">от 1 500 р./м2</span>
+              </div>
+            </div>
+          </div>
+          <div class="stage-text___container flex direction-col">
+            <p class="stage__text">
+              После утверждения эскизного проекта можно начинать следующую
+              стадию: проект. Одновременно с этой стадией мы начинаем подбирать
+              все необходимые для ее выполнения строительные и отделочные
+              материалы, мебель и оборудование. Хотя основные принципиальные
+              решения предварительно уже продуманы на стадии эскиза, сейчас они
+              конкретизируются и дорабатываются. Это большая и сложная работа,
+              на которую влияет много факторов. Кроме технических и эстетических
+              характеристик, на выбор влияет и бюджет проекта. Чертежи этой
+              стадии уже точно отражают все параметры проекта. Кроме того на
+              этой стадии к проектированию подключаются инженеры и конструкторы.
+              Именно архитекторы выдают задание на проектирование конструкторам
+              и инженерам, сводят все их решения в один согласованный проект и
+              координируют эту работу. Результатам этого является альбом
+              чертежей, который необходим строителям для составления сметы и
+              ведения строительных работ. Чертежи несут весь объем информации по
+              объекту: от общих проекций в небольших масштабах до деталей,
+              выполненных в натуральном размере. Получение разрешения на
+              строительство так же проводится на основании этого альбома
+            </p>
+            <input
+              class="text__button cursor-pointer ml-auto"
+              type="button"
+              value="Раскрыть"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="stage w-full absolute-before">
+        <div class="stage___container w-full flex justyfy-between">
+          <div class="stage__title flex align-center">
+            <div class="title__container flex align-center">
+              <p class="stage__count relative flex align-center justyfy-end">
+                <img src="img/lines.png" class="lines absolute" />
+                4
+              </p>
+              <div class="title title-h3">
+                АВТОРСКИЙ НАДЗОР
+                <span class="title-h3__span">разовый выезд 25 000 р.</span>
+              </div>
+            </div>
+          </div>
+          <div class="stage-text___container flex direction-col">
+            <p class="stage__text">
+              Как бы тщательно не был сделан проект, авторский надзор желателен.
+              Даже ответственным и опытным строителя необходимы советы и
+              контроль архитекторов, которые знают все сложности и особенности
+              проекта. В процессе надзора авторы проекта координируют работу
+              строителей, инженеров, изготовителей индивидуальной изделий,
+              поставщиков мебели и оборудования - всех тех, кто принимает
+              участие в реализации проекта.
+            </p>
+            <input
+              class="text__button cursor-pointer ml-auto"
+              type="button"
+              value="Раскрыть"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="stage w-full absolute-before">
+        <div class="stage___container w-full flex justyfy-between">
+          <div class="stage__title flex align-center">
+            <div class="title__container flex align-center">
+              <p class="stage__count relative flex align-center justyfy-end">
+                <img src="img/lines.png" class="lines absolute" />
+                5
+              </p>
+              <div class="title title-h3">
+                СТРОИТЕЛЬСТВО
+                <span class="title-h3__span">от 55 000 р./м2</span>
+              </div>
+            </div>
+          </div>
+          <div class="stage-text___container flex direction-col">
+            <p class="stage__text">
+              ПРОЕКТЫ СПЕЦИАЛЬНЫХ СИСТЕМЛАНДШАФТНЫЙ ПРОЕКТПОДГОТОВКА К
+              СОГЛАСОВАНИЮЕсли в Вашем доме предполагается устройство бассейна,
+              хамама, технической кухни, лифта, подъемника, домашнего
+              кинотеатра, умного дома или других сложных технических устройств и
+              систем - мы разработаем проекты с помощью узкопрофильных
+              специалистов.Ландшафтный дизайн - завершающий штрих, обрамляющий и
+              подчеркивающий архитектурное решение. Он включает в себя перечень
+              работ, начиная с выбора стилистического решения и концепции
+              дизайна и заканчивая выполнением всех рабочих чертежей
+              инженерно-технической части и подбором видов растений.Подготовка к
+              согласованию. На самом начальном этапе проектирования мы собираем
+              исходные данные и проектируем объект с учетом всех норм и правил,
+              а также возможности согласования принятых решений. На финальном
+              этапе мы готовим необходимую документацию для выхода на
+              согласование.
+            </p>
+            <input
+              class="text__button cursor-pointer ml-auto"
+              type="button"
+              value="Раскрыть"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="button w-full button--blue stages__button">
+      ОСТАЛИСЬ ВОПРОСЫ ?</a
+    >
+  </div>
+</section>
+
+        <section class="section proud">
+  <div class="container">
+    <h2 class="title title-h2 proud__title">ЧЕМ МЫ ГОРДИМСЯ!</h2>
+    <div class="proud-contant__container flex direction-col mx-auto w-full">
+      <div class="proud-item ml-auto">
+        <h3 class="item__title title title-h3 text-a-end">
+          КОМПЛЕКСНАЯ РЕАЛИЗАЦИЯ ОТ ИДЕИ ДО ВОПЛОЩЕНИЯ
+        </h3>
+        <a
+          href="#"
+          class="item__button button button-small button--10radius button--blue ml-auto"
+          >расчитать стоимость</a
+        >
+      </div>
+      <!--  -->
+      <div class="proud-item mr-auto">
+        <h3 class="item__title title title-h3 text-a-start">
+          ПЕРСОНАЛЬНЫЙ МЕНЕДЖЕР К КАЖДОМУ ПРОЕКТУ
+        </h3>
+        <a
+          href="#"
+          class="item__button button button-small button--10radius button--orange mr-auto"
+          >расчитать стоимость</a
+        >
+      </div>
+      <!--  -->
+      <div class="proud-item ml-auto">
+        <h3 class="item__title title title-h3 text-a-end">
+          МЫ РАБОТАЕМ ИСКЛЮЧИТЕЛЬНО В BIM ТЕХНОЛОГИИ ПРОЕКТИРОВАНИЯ
+        </h3>
+        <a
+          href="#"
+          class="item__button button button-small button--10radius button--orange ml-auto"
+          >расчитать стоимость</a
+        >
+      </div>
+    </div>
+  </div>
+</section>
+
+      </div>
+    </main>
+    <footer></footer>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>
