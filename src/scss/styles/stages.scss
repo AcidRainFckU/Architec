@@ -1,0 +1,65 @@
+.workStages {
+  padding: 0;
+  .container {
+    .stages__title {
+      margin-bottom: 20px;
+    }
+    .stages__container {
+      padding: 0 20px;
+      margin: 0 auto;
+      .stage {
+        padding: 35px;
+        max-width: 1820px;
+        margin: 0 auto;
+        .stage___container {
+          max-height: 183px;
+          overflow-y: hidden;
+          align-items: flex-start;
+          .stage__title {
+            .title__container {
+              .title {
+                .title-h3__span {
+                  display: block;
+                  font-weight: 300;
+                  font-size: 0.6em;
+                  line-height: 37px;
+                  color: #dfaa5b;
+                  margin-top: 10px;
+                }
+              }
+              .stage__count {
+                font-weight: 700;
+                font-size: 7.5rem;
+                color: $e9;
+                width: 187px;
+                height: 183px;
+                margin-right: 91px;
+              }
+            }
+          }
+          .stage-text___container {
+            .stage__text {
+              margin-top: 33px;
+              line-height: 24px;
+              font-weight: 300;
+              font-size: 1.25rem;
+              max-width: 757px;
+              width: 100%;
+              max-height: 121px;
+              overflow-y: hidden;
+              text-align: justify;
+            }
+            .text__button {
+              margin-top: 6px;
+              background: none;
+              border: 0;
+              color: #dfaa5b;
+              font-weight: 300;
+              font-size: 1.25rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

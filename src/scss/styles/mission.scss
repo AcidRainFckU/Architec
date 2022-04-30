@@ -1,0 +1,16 @@
+.mission {
+  padding-bottom: 77px;
+  .container {
+    .mission__title {
+      margin-bottom: 13px;
+    }
+    .mission__text {
+      max-width: 1176px;
+
+      font-style: italic;
+      font-weight: 300;
+      font-size: 1.875rem;
+      text-align: justify;
+    }
+  }
+}

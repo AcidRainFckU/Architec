@@ -1,0 +1,24 @@
+.contacts-buttons {
+  right: 49px;
+  height: 111px;
+  top: 50%;
+  transform: translateY(-50%);
+  .contacts-buttons__container {
+    .aside-contact__button {
+      border-radius: 50%;
+      width: 77px;
+      height: 77px;
+      &.chat {
+        margin-bottom: 17px;
+        background: #4063bf;
+        img {
+          width: 50px;
+          height: 50px;
+        }
+      }
+      &.phone-call {
+        background: $e9;
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.parallax,
+.parallax__layer {
+  height: 100vh;
+}
+.parallax__layer {
+  position: fixed;
+  background-position: bottom center;
+  background-size: auto 100%;
+  background-repeat: repeat-x;
+  width: 100%;
+  z-index: 10;
+}
+#parallax-0 {
+  background-image: url("../img/main-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#parallax-2 {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #1a1a1b 84.92%);
+  height: 39%;
+  bottom: 0;
+}

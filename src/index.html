@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html', { "title": "ABKStudio" })
+  <body>
+    @@include('html/header.html') @@include('html/aside.html')
+    <main>
+      @@include('html/main-section.html')
+      <div class="main__content w-full">
+        @@include('html/about.html') @@include('html/mission.html')
+        @@include('html/cases.html') @@include('html/stages.html')
+        @@include('html/proud.html')
+      </div>
+    </main>
+    @@include('html/footer.html')
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+.proud {
+  padding-top: 19px;
+  .container {
+    .proud__title {
+      margin-bottom: 74px;
+    }
+    .proud-contant__container {
+      max-width: 1579px;
+
+      .proud-item {
+        max-width: 1323px;
+        margin-bottom: 158px;
+        .item__title {
+        }
+        .item__button {
+          margin-top: 24px;
+        }
+        &:first-child {
+          max-width: 906px;
+        }
+        &:nth-child(2) {
+          max-width: 815px;
+          margin-bottom: 324px;
+        }
+      }
+    }
+  }
+}

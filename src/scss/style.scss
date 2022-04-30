@@ -1,0 +1,157 @@
+@import "styles/vars.scss";
+@import "styles/globals.scss";
+
+.container {
+  max-width: 1920px;
+  width: 100%;
+  margin: auto;
+}
+
+.title {
+  font-weight: 700;
+  text-transform: uppercase;
+  &-h1 {
+    font-size: 3.125rem;
+    max-width: 1088px;
+  }
+  &-h2 {
+    font-size: 7.5rem;
+    background: $e8-gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: $e8;
+    display: table;
+    margin: 0 auto;
+    line-height: 1.59167em;
+  }
+  &--white {
+    display: unset;
+    background: unset;
+    -webkit-text-fill-color: unset;
+    color: #ffffff;
+    .title--white__span {
+      font-size: 6.25rem;
+      text-transform: lowercase;
+    }
+  }
+  &__span {
+    &--up {
+      font-size: 1.2em;
+    }
+    &--e8 {
+      color: $e8;
+    }
+    &--e9 {
+      color: $e9;
+      text-transform: lowercase;
+    }
+  }
+  &-h3 {
+    font-weight: 300;
+    font-size: 3.125rem;
+  }
+  &-h4 {
+    font-size: 1.875rem;
+    line-height: 37px;
+    text-align: justify;
+
+    color: #ffffff;
+
+    text-shadow: 4px 4px 20px rgba(253, 253, 253, 0.5);
+  }
+}
+
+.main__content {
+  position: relative;
+  min-height: 100vh;
+  z-index: 99;
+  background-color: #1a1a1b;
+}
+
+.button {
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  display: block;
+  &.main-section__button {
+    font-size: 1.25rem;
+    font-weight: 700;
+    max-width: 412px;
+    padding: 1.3em 2em;
+    box-shadow: 5px 4px 32px 6px rgba(0, 0, 0, 0.5);
+  }
+  &.about__button {
+    font-weight: 600;
+    font-size: 1.5625rem;
+    max-width: 640px;
+    padding: 1.4em 0;
+    margin-top: 43px;
+  }
+  &.stages__button {
+    font-weight: 600;
+    font-size: 1.5625rem;
+    padding: 1.16em 0;
+  }
+
+  &.button-small {
+    font-weight: 700;
+    font-size: 1.25rem;
+    max-width: 371px;
+    padding: 1.25em 0;
+  }
+  &.button--10radius {
+    border-radius: 10px;
+  }
+  &.button--15radius {
+    border-radius: 15px;
+  }
+
+  &.button--blue {
+    background-color: $blue;
+  }
+  &.button--orange {
+    background-color: $e9;
+  }
+}
+
+.section {
+  padding: 0 20px;
+}
+
+.absolute-before {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100vw;
+    top: 0;
+    left: 50%;
+    height: 1px;
+    background-color: #ffffff;
+    transform: translateX(-50%);
+  }
+}
+.absolute-after {
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100vw;
+    bottom: 0;
+    left: 50%;
+    height: 1px;
+    background-color: #ffffff;
+    transform: translateX(-50%);
+  }
+}
+
+.lines {
+  opacity: 5%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 187px;
+  height: 183px;
+}
+
+@import "styles/{*, !globals, !vars}.scss";
