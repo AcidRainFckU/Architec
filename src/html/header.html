@@ -1,17 +1,35 @@
-<header class="header fixed w-screen z-9999 container transformx-center">
-  <div
-    class="header__container flex justyfy-between align-center w-full ml-auto"
-  >
-    <a href="/" class="logo">
-      <img src="@img/logo.png" alt="ABKSTUDIO" />
-    </a>
-    <div class="menu flex justyfy-between w-full">
-      <a href="#" class="menu__item">О НАС</a>
-      <a href="#" class="menu__item">ПРОЕКТЫ</a>
-      <a href="#" class="menu__item">УСЛУГИ</a>
-      <a href="#" class="menu__item">СТОИМОСТЬ</a>
-      <a href="#" class="menu__item">КОНТАКТЫ</a>
+<header class="header absolute w-screen z-9999 transformx-center">
+  <div class="container">
+    <div
+      class="header__container flex justyfy-between align-center w-full ml-auto"
+    >
+      <a href="/" class="logo">
+        <img src="@img/logo.png" alt="ABKSTUDIO" />
+      </a>
+      <div class="menu flex justyfy-between w-full">
+        <a href="#about" class="menu__item">О НАС</a>
+        <a href="#cases" class="menu__item">ПРОЕКТЫ</a>
+        <a href="#stages" class="menu__item">УСЛУГИ</a>
+        <a href="#price" class="menu__item">СТОИМОСТЬ</a>
+        <a href="#contacts" class="menu__item">КОНТАКТЫ</a>
+      </div>
+      <a class="phone" href="tel:+79811593110">+7-981-159-31-10</a>
+      <div class="burger cursor-pointer" id="burgerOpen">
+        <div class="burger__line"></div>
+      </div>
     </div>
-    <a class="phone" href="tel:+79811593110">+7-981-159-31-10</a>
   </div>
 </header>
+<div class="burger-menu fixed justyfy-end" id="burgerMenu">
+  <div class="menu__container">
+    <div class="burger__close" id="burgerClose"></div>
+
+    <div class="menu flex justyfy-center direction-col">
+      <a href="#about" class="menu__item">О НАС</a>
+      <a href="#cases" class="menu__item">ПРОЕКТЫ</a>
+      <a href="#stages" class="menu__item">УСЛУГИ</a>
+      <a href="#price" class="menu__item">СТОИМОСТЬ</a>
+      <a href="#contacts" class="menu__item">КОНТАКТЫ</a>
+    </div>
+  </div>
+</div>

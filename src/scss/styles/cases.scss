@@ -38,6 +38,7 @@
         .case__text-container {
           max-width: 476px;
           width: 100%;
+          margin-left: 54px;
           .text-container__title {
             height: 183px;
 
@@ -66,6 +67,14 @@
         }
         &:first-child {
           padding: 0 0 53px;
+        }
+
+        @media screen and (max-width: 1109px) {
+          flex-direction: column-reverse;
+          .case__text-container {
+            margin-left: 0;
+            margin-bottom: 25px;
+          }
         }
       }
     }
