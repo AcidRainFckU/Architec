@@ -54,5 +54,13 @@
         }
       }
     }
+    @media screen and (max-height: 886px) {
+      .button {
+        bottom: 16%;
+      }
+      .arrow {
+        bottom: 1%;
+      }
+    }
   }
 }
