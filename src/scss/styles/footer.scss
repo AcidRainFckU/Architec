@@ -1,0 +1,77 @@
+.footer {
+  background-color: #1a1a1b;
+  * {
+    font-family: $ubuntu;
+  }
+  .container {
+    padding: 85px 44px 67px;
+    .footer__container {
+      max-width: 1317px;
+      width: 100%;
+      .footer__logo-container {
+        a {
+          width: 100%;
+          .footer__logo {
+            width: 170px;
+            height: 88px;
+            margin-bottom: 40px;
+          }
+        }
+        .logo__text {
+          font-weight: 500;
+          font-size: 1.5rem;
+          span {
+            font-weight: 300;
+          }
+        }
+        .text__us {
+          margin-top: 34px;
+          display: block;
+          text-align: center;
+          font-weight: 700;
+          font-size: 12px;
+          font-family: $moncerat;
+        }
+      }
+      .footer__menu {
+        font-weight: 400;
+        font-size: 1.5rem;
+      }
+      .email__feedback {
+        .title-h4 {
+          font-weight: 500;
+        }
+        .email__input {
+          margin: 20px 0 24px;
+          padding: 23px 27px 24px;
+          border-radius: 10px;
+          font-weight: 300;
+          font-size: 1.5rem;
+          color: rgba(0, 0, 0, 0.5);
+          mix-blend-mode: normal;
+        }
+        .email__button {
+          padding: 24px 0;
+          background-color: #dfaa5b;
+          color: #ffffff;
+          font-weight: 500;
+          font-size: 24px;
+          border-radius: 10px;
+          cursor: pointer;
+        }
+      }
+      @media screen and (max-width: 930px) {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        .footer__menu {
+          margin: 45px 0;
+        }
+        .title-h4 {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

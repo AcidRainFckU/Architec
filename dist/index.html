@@ -20,29 +20,47 @@
 </head>
 
   <body>
-    <header class="header fixed w-screen z-9999 container transformx-center">
-  <div
-    class="header__container flex justyfy-between align-center w-full ml-auto"
-  >
-    <a href="/" class="logo">
-      <img src="img/logo.png" alt="ABKSTUDIO" />
-    </a>
-    <div class="menu flex justyfy-between w-full">
-      <a href="#" class="menu__item">О НАС</a>
-      <a href="#" class="menu__item">ПРОЕКТЫ</a>
-      <a href="#" class="menu__item">УСЛУГИ</a>
-      <a href="#" class="menu__item">СТОИМОСТЬ</a>
-      <a href="#" class="menu__item">КОНТАКТЫ</a>
+    <header class="header absolute w-screen z-9999 transformx-center">
+  <div class="container">
+    <div
+      class="header__container flex justyfy-between align-center w-full ml-auto"
+    >
+      <a href="/" class="logo">
+        <img src="img/logo.png" alt="ABKSTUDIO" />
+      </a>
+      <div class="menu flex justyfy-between w-full">
+        <a href="#about" class="menu__item">О НАС</a>
+        <a href="#cases" class="menu__item">ПРОЕКТЫ</a>
+        <a href="#stages" class="menu__item">УСЛУГИ</a>
+        <a href="#price" class="menu__item">СТОИМОСТЬ</a>
+        <a href="#contacts" class="menu__item">КОНТАКТЫ</a>
+      </div>
+      <a class="phone" href="tel:+79811593110">+7-981-159-31-10</a>
+      <div class="burger cursor-pointer" id="burgerOpen">
+        <div class="burger__line"></div>
+      </div>
     </div>
-    <a class="phone" href="tel:+79811593110">+7-981-159-31-10</a>
   </div>
 </header>
+<div class="burger-menu fixed justyfy-end" id="burgerMenu">
+  <div class="menu__container">
+    <div class="burger__close" id="burgerClose"></div>
+
+    <div class="menu flex justyfy-center direction-col">
+      <a href="#about" class="menu__item">О НАС</a>
+      <a href="#cases" class="menu__item">ПРОЕКТЫ</a>
+      <a href="#stages" class="menu__item">УСЛУГИ</a>
+      <a href="#price" class="menu__item">СТОИМОСТЬ</a>
+      <a href="#contacts" class="menu__item">КОНТАКТЫ</a>
+    </div>
+  </div>
+</div>
  <aside class="contacts-buttons fixed z-9999">
   <div class="contacts-buttons__container">
     <div class="aside-contact__button cursor-pointer chat flex">
       <img
         class="m-auto"
-        src="img/aside__person.svg"
+        src="img/asidePerson.svg"
         alt="chat"
         id="asideChat"
       />
@@ -50,13 +68,14 @@
     <div class="aside-contact__button cursor-pointer phone-call flex">
       <img
         class="m-auto"
-        src="img/aside__phone.svg"
+        src="img/asidePhone.svg"
         alt="phone-call"
         id="asideCall"
       />
     </div>
   </div>
 </aside>
+
 
     <main>
       <section class="main-section">
@@ -100,7 +119,7 @@
           class="button button--blue main-section__button transformx-center absolute button--15radius"
           >РАССЧИТАТЬ СТОИМОСТЬ ВАШЕГО ДОМА</a
         >
-        <a href="#" class="arrow transformx-center absolute">
+        <a href="#about" class="arrow transformx-center absolute">
           <p>ПОСМОТРИТЕ НАШИ РАБОТЫ</p>
           <img src="img/arrow.svg" alt="посмотрите на работы" />
         </a>
@@ -110,7 +129,7 @@
 </section>
 
       <div class="main__content w-full">
-        <section class="section about">
+        <section id="about" class="section about scroll">
   <div class="container relative">
     <img src="img/lines.png" class="img-background absolute z-100" />
     <h2 class="title title-h2 relative z-200">АРХИТЕКТУРНОЕ БЮРО</h2>
@@ -167,7 +186,7 @@
   </div>
 </section>
 
-        <section class="cases section">
+        <section id="cases" class="cases section scroll">
   <div class="container">
     <h2 class="title title-h2 cases__title">НАШИ РАБОТЫ</h2>
     <div class="cases__container mx-auto">
@@ -282,7 +301,7 @@
     </div>
   </div>
 </section>
- <section class="section workStages">
+ <section id="stages" class="section workStages scroll">
   <div class="container">
     <h2 class="title title-h2 stages__title">Этапы работы</h2>
     <div class="stages__container w-full">
@@ -495,7 +514,7 @@
   </div>
 </section>
 
-        <section class="section proud">
+        <section id="price" class="section proud scroll">
   <div class="container">
     <h2 class="title title-h2 proud__title">ЧЕМ МЫ ГОРДИМСЯ!</h2>
     <div class="proud-contant__container flex direction-col mx-auto w-full">
@@ -517,27 +536,61 @@
         <a
           href="#"
           class="item__button button button-small button--10radius button--orange mr-auto"
-          >расчитать стоимость</a
+          >ПОДРОБНЕЕ</a
         >
       </div>
       <!--  -->
       <div class="proud-item ml-auto">
         <h3 class="item__title title title-h3 text-a-end">
-          МЫ РАБОТАЕМ ИСКЛЮЧИТЕЛЬНО В BIM ТЕХНОЛОГИИ ПРОЕКТИРОВАНИЯ
+          МЫ РАБОТАЕМ ИСКЛЮЧИТЕЛЬНО В <b>BIM</b> ТЕХНОЛОГИИ ПРОЕКТИРОВАНИЯ
         </h3>
         <a
           href="#"
           class="item__button button button-small button--10radius button--orange ml-auto"
-          >расчитать стоимость</a
+          >ПОДРОБНЕЕ</a
         >
       </div>
     </div>
   </div>
 </section>
+ <footer id="contacts" class="footer scroll">
+  <div class="container">
+    <div class="footer__container flex justyfy-between">
+      <div class="footer__logo-container">
+        <a href="/" class=""
+          ><img src="img/logo.png" class="footer__logo" alt="ABK studio"
+        /></a>
+
+        <p class="logo__text">
+          ARCHITECTURAL <br />
+          BUREAU <br />OF KRASNOV<br />
+          <span>
+            +7 - 981-159-31-10<br />
+            ABKstudio.spb@yandex.ru</span
+          >
+        </p>
+        <a href="#" class="text__us">ПИШИТЕ</a>
+      </div>
+      <div class="footer__menu">
+        <ul>
+          <li><a href="#cases">Проекты</a></li>
+          <li><a href="#price">Цены</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="email__feedback">
+        <from class="footer__mail flex direction-col">
+          <h4 class="title title-h4">Subcribe for Offers</h4>
+          <input type="text" class="email__input" placeholder="Email Address" />
+          <input type="submit" class="email__button" value="Subcribe  Now" />
+        </from>
+      </div>
+    </div>
+  </div>
+</footer>
 
       </div>
     </main>
-    <footer></footer>
 
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/app.min.js"></script>

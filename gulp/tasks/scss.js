@@ -28,6 +28,7 @@ export const scss = () => {
         outputStyle: "expanded",
       })
     )
+
     .pipe(app.plugins.if(app.isBuild, groupCssMediaQueries()))
     .pipe(
       app.plugins.if(

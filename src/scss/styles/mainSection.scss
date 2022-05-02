@@ -3,9 +3,11 @@
     max-width: 1228px;
     min-height: 235px;
     background: rgba(0, 0, 0, 0.4);
+
     .vk-link {
       min-height: 235px;
       max-width: 129px;
+      cursor: pointer;
       &__container {
         font-family: $gilroy;
         font-size: 1.125rem;
@@ -15,7 +17,14 @@
           transform: rotate(-90deg);
           margin: auto;
           margin-left: 13px;
+          @media screen and (max-width: 992px) {
+            margin-left: 9px;
+          }
         }
+      }
+      @media screen and (max-width: 992px) {
+        max-width: 50px;
+        white-space: nowrap;
       }
     }
   }
@@ -37,6 +46,12 @@
         width: 48px;
         height: 25px;
         margin-top: 30px;
+        transition: transform 0.3s;
+      }
+      &:hover {
+        img {
+          transform: translateY(-10px);
+        }
       }
     }
   }

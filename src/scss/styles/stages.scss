@@ -18,6 +18,7 @@
           .stage__title {
             .title__container {
               .title {
+                width: 100%;
                 .title-h3__span {
                   display: block;
                   font-weight: 300;
@@ -31,23 +32,59 @@
                 font-weight: 700;
                 font-size: 7.5rem;
                 color: $e9;
-                width: 187px;
+                min-width: 187px;
                 height: 183px;
                 margin-right: 91px;
+                @media screen and (max-width: 1735px) {
+                  margin-right: 30px;
+                }
+                @media screen and (max-width: 797px) {
+                  min-width: 115px;
+                  height: 115px;
+                  font-size: 6rem;
+
+                  .lines {
+                    width: 115px;
+                    height: 115px;
+                  }
+                }
+                @media screen and (max-width: 544px) {
+                  min-width: 65px;
+                  height: 65px;
+                  font-size: 3.125rem;
+                  margin-right: 0;
+                  justify-content: center;
+                  margin-bottom: 30px;
+                  .lines {
+                    width: 65px;
+                    height: 65px;
+                  }
+                }
+              }
+              @media screen and (max-width: 544px) {
+                flex-direction: column;
+                text-align: center;
+                margin: 0 auto;
               }
             }
           }
           .stage-text___container {
+            max-width: 757px;
+            margin-left: 10px;
+            width: 100%;
+
             .stage__text {
               margin-top: 33px;
               line-height: 24px;
               font-weight: 300;
               font-size: 1.25rem;
-              max-width: 757px;
               width: 100%;
               max-height: 121px;
               overflow-y: hidden;
               text-align: justify;
+              @media screen and (max-width: 544px) {
+                text-align: center;
+              }
             }
             .text__button {
               margin-top: 6px;
@@ -56,6 +93,30 @@
               color: #dfaa5b;
               font-weight: 300;
               font-size: 1.25rem;
+            }
+          }
+          @media screen and (max-width: 1573px) {
+            flex-direction: column;
+            max-height: 366px;
+            .stage__title {
+              margin: 0 auto;
+              max-width: 757px;
+              width: 100%;
+              .title__container {
+                .title {
+                  .title-h3__span {
+                  }
+                }
+                .stage__count {
+                }
+              }
+            }
+            .stage-text___container {
+              margin: 0 auto;
+              .stage__text {
+              }
+              .text__button {
+              }
             }
           }
         }
