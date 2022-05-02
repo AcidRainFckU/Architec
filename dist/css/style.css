@@ -498,6 +498,11 @@ li {
 .contacts-buttons .contacts-buttons__container .aside-contact__button.phone-call {
   background: #e9c38a;
 }
+@media screen and (max-width: 1200px) {
+  .contacts-buttons {
+    right: 10px;
+  }
+}
 
 .cases {
   padding-bottom: 0;
@@ -835,6 +840,16 @@ li {
   width: 222px;
   height: 115px;
 }
+@media screen and (max-width: 1200px) {
+  .header .header__container .logo {
+    width: 170px;
+    height: 80px;
+  }
+  .header .header__container .logo img {
+    width: 170px;
+    height: 80px;
+  }
+}
 .header .header__container .menu {
   max-width: 727px;
 }
@@ -865,24 +880,25 @@ li {
 }
 .header .header__container .burger {
   display: none;
-  width: 90px;
-  height: 60px;
+  width: 45px;
+  height: 34px;
   position: relative;
+  overflow: visible;
 }
 .header .header__container .burger .burger__line {
-  width: 90px;
-  height: 10px;
+  width: 45px;
+  height: 4px;
   background-color: #fff;
-  border-radius: 10px;
+  border-radius: 5px;
   margin: auto;
 }
 .header .header__container .burger .burger__line::after, .header .header__container .burger .burger__line::before {
   content: "";
   position: absolute;
-  width: 90px;
-  height: 10px;
+  width: 45px;
+  height: 4px;
   background-color: #fff;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .header .header__container .burger .burger__line::after {
   top: 0;
@@ -932,8 +948,8 @@ li {
   }
 }
 .burger-menu .menu__container .burger__close {
-  width: 90px;
-  height: 90px;
+  width: 45px;
+  height: 45px;
   position: relative;
   margin: 10px auto 0;
   cursor: pointer;
@@ -943,10 +959,10 @@ li {
   content: "";
   z-index: -1;
   position: absolute;
-  width: 90px;
-  height: 10px;
+  width: 45px;
+  height: 3px;
   background-color: #fff;
-  border-radius: 10px;
+  border-radius: 5px;
   top: 50%;
   opacity: 0;
 }
@@ -1047,6 +1063,14 @@ li {
 }
 .main-section .buttons .arrow:hover img {
   transform: translateY(-10px);
+}
+@media screen and (max-height: 886px) {
+  .main-section .buttons .button {
+    bottom: 16%;
+  }
+  .main-section .buttons .arrow {
+    bottom: 1%;
+  }
 }
 
 .mission {
