@@ -11,9 +11,6 @@
   z-index: 10;
 }
 #parallax-0 {
-  background-image: url("../img/main-image.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 #parallax-2 {
@@ -22,4 +19,11 @@
   bottom: -20px;
 }
 #parallax-3 {
+  height: 24%;
+  bottom: 89px;
+  @media screen and (max-height: 886px) {
+    height: 30%;
+
+    bottom: 25px;
+  }
 }

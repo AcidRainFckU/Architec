@@ -7,6 +7,12 @@
   margin: auto;
 }
 
+html {
+  &.no-scroll {
+    overflow: hidden;
+  }
+}
+
 .title {
   font-weight: 700;
   text-transform: uppercase;
@@ -81,6 +87,14 @@
       font-size: 1.5625rem;
       text-align: start;
     }
+  }
+
+  &-h5 {
+    font-size: 1.25rem;
+    line-height: 24px;
+    text-align: center;
+    color: #000;
+    text-transform: none;
   }
 }
 

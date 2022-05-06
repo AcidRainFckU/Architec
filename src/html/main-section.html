@@ -1,45 +1,56 @@
 <section class="main-section">
   <div class="parallax">
-    <div class="parallax__layer" id="parallax-0" data-speed="30"></div>
+    <div
+      class="parallax__layer parallax__slider"
+      id="parallax-0"
+      data-speed="30"
+    >
+      <div class="slider__container relative">
+        <div
+          class="slider__item absolute first-open w-screen"
+          id="mainImageSlider0"
+        ></div>
+        <div class="slider__item absolute w-screen" id="mainImageSlider1"></div>
+        <div class="slider__item absolute w-screen" id="mainImageSlider2"></div>
+        <div class="slider__item absolute w-screen" id="mainImageSlider3"></div>
+      </div>
+    </div>
     <div
       class="parallax__layer flex align-center"
       id="parallax-1"
       data-speed="50"
     >
-      <div class="container">
-        <div class="main-section__text flex align-center">
-          <div class="vk-link w-full flex flex-center">
-            <a
-              class="vk-link__container flex flex-center"
-              href="https://vk.com"
-            >
-              Follow us
-              <img src="@img/vk.svg" alt="Вконтакте" />
-            </a>
-          </div>
-
-          <h1 class="title title-h1 w-full">
-            АВТОРСКОЕ
-            <span class="title__span title__span--up title__span--e8"
-              >ПРЕМИАЛЬНОЕ</span
-            >
-            АРХИТЕКТУРНОЕ ПРОЕКТИРОВАНИЕ
-            <span class="title__span title__span--e9"
-              >от концепции до реализации</span
-            >
-          </h1>
+      <div class="main-section__text flex align-center">
+        <div class="vk-link w-full flex flex-center">
+          <a class="vk-link__container flex flex-center" href="https://vk.com">
+            Подпишитесь
+            <img src="@img/vk.svg" alt="Вконтакте" />
+          </a>
         </div>
+
+        <h1 class="title title-h1 w-full">
+          АВТОРСКОЕ
+          <span class="title__span title__span--up title__span--e8"
+            >ПРЕМИАЛЬНОЕ</span
+          >
+          АРХИТЕКТУРНОЕ ПРОЕКТИРОВАНИЕ
+          <span class="title__span title__span--e9"
+            >от концепции до реализации</span
+          >
+        </h1>
       </div>
     </div>
     <div class="parallax__layer" id="parallax-2" data-speed="85"></div>
     <div class="parallax__layer" id="parallax-3" data-speed="65">
-      <div class="buttons z-900 w-full">
+      <div
+        class="buttons flex direction-col justyfy-between align-center z-900 w-full"
+      >
         <a
           href="#"
-          class="button button--blue main-section__button transformx-center absolute button--15radius"
+          class="button button--blue main-section__button button--15radius"
           >РАССЧИТАТЬ СТОИМОСТЬ ВАШЕГО ДОМА</a
         >
-        <a href="#about" class="arrow transformx-center absolute">
+        <a href="#about" class="arrow">
           <p>ПОСМОТРИТЕ НАШИ РАБОТЫ</p>
           <img src="@img/arrow.svg" alt="посмотрите на работы" />
         </a>
