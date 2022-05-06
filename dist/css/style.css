@@ -426,14 +426,22 @@ html.no-scroll {
   font-weight: 400;
   max-height: 563px;
   transition: max-height 10s;
-  overflow-y: hidden;
+  overflow-y: scroll;
+}
+.about .container .about__container .about__text .text::-webkit-scrollbar {
+  width: 0;
 }
 .about .container .about__container .about__text .text span {
   display: block;
   margin-bottom: 35px;
 }
 .about .container .about__container .about__text .shadow {
-  height: 400px;
+  height: 32px;
+  bottom: -38px;
+  background: #1a1a1b;
+  -webkit-box-shadow: 0px -62px 80px 100px rgb(26, 26, 27);
+  -moz-box-shadow: 0px -62px 80px 100px rgb(26, 26, 27);
+  box-shadow: 0px -62px 80px 100px rgb(26, 26, 27);
 }
 .about .container .about__container .about__img {
   max-width: 693px;
@@ -472,6 +480,14 @@ html.no-scroll {
   .about .container .about__container .about__text {
     margin: 0 auto;
   }
+  .about .container .about__container .about__text .shadow {
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 175px;
+    bottom: -176px;
+    z-index: 201;
+  }
   .about .container .about__container .about__img {
     min-height: 601px;
     margin: 0 auto;
@@ -482,6 +498,12 @@ html.no-scroll {
     top: 0px;
     left: 50%;
     transform: translateX(-50%);
+  }
+}
+@media screen and (max-width: 992px) {
+  .about .container .about__container .about__text .shadow {
+    height: 265px;
+    bottom: -305px;
   }
 }
 @media screen and (max-width: 1121px) {
@@ -1512,11 +1534,10 @@ li {
   padding: 35px;
   max-width: 1820px;
   margin: 0 auto;
-  transition: max-height 0.5s;
 }
 .workStages .container .stages__container .stage .stage___container {
   max-height: 200px;
-  transition: max-height 0.5s;
+  transition: max-height 0.9s linear 0s;
   overflow: hidden;
   align-items: flex-start;
   grid-template-columns: 1fr minmax(100px, 757px);
@@ -1624,7 +1645,7 @@ li {
   font-weight: 300;
   font-size: 1.25rem;
   width: 100%;
-  transition: max-height 0.5s;
+  transition: max-height 0.9s linear 0s;
   max-height: 121px;
   overflow-y: hidden;
   text-align: justify;
@@ -1645,13 +1666,14 @@ li {
 .workStages .container .stages__container .stage .stage___container .stage-image {
   grid-area: stage-image;
   width: 100%;
+  transition: opacity 0.8s linear 0s;
   opacity: 0;
 }
 .workStages .container .stages__container .stage.open .stage___container {
-  max-height: 1000vh;
+  max-height: 500vh;
 }
 .workStages .container .stages__container .stage.open .stage___container .stage-text___container .stage__text {
-  max-height: 1000vh;
+  max-height: 500vh;
 }
 .workStages .container .stages__container .stage.open .stage___container .stage-image {
   opacity: 100%;
