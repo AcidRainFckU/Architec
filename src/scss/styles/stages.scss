@@ -11,11 +11,10 @@
         padding: 35px;
         max-width: 1820px;
         margin: 0 auto;
-        transition: max-height 0.5s;
 
         .stage___container {
           max-height: 200px;
-          transition: max-height 0.5s;
+          transition: max-height 0.9s linear 0s;
 
           overflow: hidden;
           align-items: flex-start;
@@ -117,7 +116,7 @@
               font-weight: 300;
               font-size: 1.25rem;
               width: 100%;
-              transition: max-height 0.5s;
+              transition: max-height 0.9s linear 0s;
 
               max-height: 121px;
               overflow-y: hidden;
@@ -132,21 +131,23 @@
               border: 0;
               color: #dfaa5b;
               font-weight: 300;
+
               font-size: 1.25rem;
             }
           }
           .stage-image {
             grid-area: stage-image;
             width: 100%;
+            transition: opacity 0.8s linear 0s;
             opacity: 0;
           }
         }
         &.open {
           .stage___container {
-            max-height: 1000vh;
+            max-height: 500vh;
             .stage-text___container {
               .stage__text {
-                max-height: 1000vh;
+                max-height: 500vh;
               }
             }
             .stage-image {
