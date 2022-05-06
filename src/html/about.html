@@ -3,11 +3,25 @@
     <img src="@img/lines.png" class="img-background absolute z-100" />
     <h2 class="title title-h2 relative z-200">АРХИТЕКТУРНОЕ БЮРО</h2>
     <div class="about__container m-auto relative z-200 flex justyfy-between">
-      <div class="about__text">
+      <div class="about__text relative">
         <h2 class="title title-h2 title--white">
           ABK <span class="title--white__span">studio</span>
         </h2>
-        <p class="text">
+        <p class="text" id="aboutText">
+          <span>
+            Архитектурное бюро ABK studio (Архитектурное Бюро Краснова) -
+            молодое, современное проектное бюро. Наша команда - это семья, и
+            наши клиенты являются ее частью. Мы используем нашу
+            индивидуальность, наш опыт и наше уникальное видение архитектуры. Мы
+            всегда стремимся учиться и улучшать то, что было раньше, с целью
+            обеспечения высочайшего качества архитектуры.</span
+          >
+          <span
+            >Наши проекты основаны на диалоге, основанном на глубоком понимании
+            потребностей и видений наших клиентов. Мы используем технологии,
+            знания и любознательный характер для предоставления
+            высококачественных проектов и услуг нашим клиентам.</span
+          >
           <span>
             Архитектурное бюро ABK studio (Архитектурное Бюро Краснова) -
             молодое, современное проектное бюро. Наша команда - это семья, и
@@ -23,6 +37,7 @@
             высококачественных проектов и услуг нашим клиентам.</span
           >
         </p>
+        <div class="absolute shadow" id="aboutShadow"></div>
       </div>
       <div class="about__img flex relative">
         <img
@@ -38,6 +53,7 @@
     </div>
     <a
       href="#"
+      data-modal="#qwestionModal"
       class="button about__button button--15radius button--blue mx-auto relative z-300"
       >ЗАДАТЬ ВОПРОС ЛИЧНО
     </a>

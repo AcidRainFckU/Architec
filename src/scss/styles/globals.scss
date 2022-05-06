@@ -32,6 +32,10 @@ li {
   }
 }
 
+.grid {
+  display: grid;
+}
+
 .direction {
   &-col {
     flex-direction: column;

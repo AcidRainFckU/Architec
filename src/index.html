@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" id="html">
   @@include('html/head.html', { "title": "ABKStudio" })
   <body>
     @@include('html/header.html') @@include('html/aside.html')
-
+    @@include('html/modals.html')
     <main>
       @@include('html/main-section.html')
       <div class="main__content w-full">
+        <!-- Проверить теорию с буквой a -->
         @@include('html/about.html') @@include('html/mission.html')
         @@include('html/cases.html') @@include('html/stages.html')
         @@include('html/proud.html') @@include('html/footer.html')
