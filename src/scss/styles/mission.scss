@@ -1,18 +1,63 @@
 .mission {
-  padding-bottom: 77px;
+  padding-bottom: 135px;
   .container {
     .mission__title {
       margin-bottom: 13px;
     }
     .mission__text {
-      max-width: 1176px;
-
+      max-width: 1345px;
+      width: 100%;
       font-style: italic;
       font-weight: 300;
       font-size: 1.875rem;
-      text-align: justify;
-      @media screen and (max-width: 544px) {
-        text-align: center;
+      text-align: center;
+      @media screen and (max-width: 1640px) {
+        max-width: unset;
+        padding: 0 150px;
+      }
+    }
+    .sign {
+      font-weight: 300;
+      font-size: 25px;
+      line-height: 30px;
+      bottom: 18px;
+      right: 33px;
+      text-align: center;
+      span {
+        margin-bottom: 28px;
+        display: block;
+        max-height: 30px;
+        margin-right: 15px;
+      }
+    }
+  }
+  @media screen and (max-width: 798px) {
+    padding-bottom: 77px;
+    .container {
+      .mission__text {
+        padding: 0;
+      }
+      .sign {
+        position: relative;
+        bottom: unset;
+        right: unset;
+        justify-content: end;
+      }
+    }
+  }
+  @media screen and (max-width: 698px) {
+    .container {
+      .sign {
+        flex-direction: column;
+        margin-top: 25px;
+        span {
+          max-width: 170px;
+          margin: 0 0 15px;
+          margin-left: auto;
+        }
+        img {
+          margin-left: 30px;
+        }
       }
     }
   }

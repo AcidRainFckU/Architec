@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="ru" id="html">
+<html lang="ru" id="html" class="no-scroll">
   @@include('html/head.html', { "title": "ABKStudio" })
   <body>
     @@include('html/header.html') @@include('html/aside.html')
     @@include('html/modals.html')
     <main>
-      @@include('html/main-section.html')
+      @@include('html/loader.html') @@include('html/main-section.html')
       <div class="main__content w-full">
         <!-- Проверить теорию с буквой a -->
         @@include('html/about.html') @@include('html/mission.html')

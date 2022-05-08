@@ -7,6 +7,7 @@ import * as aboutText from "./modules/aboutText.js";
 import * as stages from "./modules/stages.js";
 import * as modal from "./modules/modal.js";
 import * as telMask from "./modules/telMask.js";
+import * as loader from "./modules/loader.js";
 
 flsFunctions.isWebp();
 paralaxScroll();
