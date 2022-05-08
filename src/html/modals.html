@@ -1,3 +1,4 @@
+<!-- ВОПРОСЫ -->
 <div class="modal flex modal-qwestions" id="qwestionModal">
   <div class="modal__dialog m-auto relative">
     <img
@@ -28,6 +29,7 @@
   </div>
 </div>
 
+<!-- ТЕЛЕФОН -->
 <div class="modal flex modal-call" id="callModal">
   <div class="modal__dialog m-auto relative">
     <div class="modal__close absolute">
@@ -36,24 +38,33 @@
     <div class="modal__container flex direction-col">
       <div class="modal-call__img img__container relative">
         <img
-          src="@img/preson.jpg"
+          src="@img/sldie2.jpg"
           alt="Основатель"
           class="img absolute transformx-center"
         />
         <div class="background absolute"></div>
+        <img src="@img/logo.png" class="logo absolute transformx-center" />
       </div>
-      <from class="modal-call__text flex direction-col align-center">
+      <form
+        class="modal-call__text flex direction-col align-center"
+        id="phoneForm"
+      >
         <h5 class="title title-h5">Реализуем ваши самые смелые идеи!</h5>
         <input
           class="user_name input--text"
           type="text"
+          required
           placeholder="Как к вам обращаться?"
         />
-        <input
-          class="phone_number input--text tel"
-          type="text"
-          placeholder="+7 (999) 999-99-99"
-        />
+        <div class="input__container">
+          <input
+            class="phone_number input--text tel"
+            type="text"
+            required
+            placeholder="+7 (999) 999-99-99"
+          />
+          <span>Поле заполнено некорректно</span>
+        </div>
         <input class="modal__send" type="submit" value="Отправить" />
         <p class="politics">
           Потдверждаю
@@ -62,11 +73,62 @@
           >
           на обработку персональных данных
         </p>
-      </from>
+      </form>
     </div>
   </div>
 </div>
 
+<!-- МАИЛ -->
+<div class="modal flex modal-call" id="emailModal">
+  <div class="modal__dialog m-auto relative">
+    <div class="modal__close absolute">
+      <div class="relative close__container"></div>
+    </div>
+    <div class="modal__container flex direction-col">
+      <div class="modal-call__img img__container relative">
+        <img
+          src="@img/sldie2.jpg"
+          alt="Основатель"
+          class="img absolute transformx-center"
+        />
+        <div class="background absolute"></div>
+        <img src="@img/logo.png" class="logo absolute transformx-center" />
+      </div>
+      <form
+        id="email__form"
+        class="modal-call__text flex direction-col align-center"
+      >
+        <h5 class="title title-h5">Реализуем ваши самые смелые идеи!</h5>
+        <input
+          class="user_name input--text"
+          type="text"
+          required
+          placeholder="Как к вам обращаться?"
+        />
+        <div class="input__container">
+          <input
+            class="phone_number input--text mail"
+            id="modal_email"
+            type="text"
+            required
+            placeholder="example@example.com"
+          />
+          <span>Поле заполнено некорректно</span>
+        </div>
+        <input class="modal__send" type="submit" value="Отправить" />
+        <p class="politics">
+          Потдверждаю
+          <span class="politics__link" data-modal="#politicsModal"
+            >согласие</span
+          >
+          на обработку персональных данных
+        </p>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- ПОЛИТИКА -->
 <div class="modal flex modal-politics" id="politicsModal">
   <div class="modal__dialog m-auto relative">
     <div class="modal__close absolute">

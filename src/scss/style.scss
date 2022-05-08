@@ -110,6 +110,15 @@ html {
   text-align: center;
   width: 100%;
   display: block;
+  .scale {
+    display: block;
+    transition: transform 0.3s;
+  }
+  &:hover {
+    .scale {
+      transform: scale(1.1);
+    }
+  }
   &.main-section__button {
     font-size: 1.25rem;
     font-weight: 700;

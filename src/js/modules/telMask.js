@@ -1,3 +1,5 @@
+// PHONE
+
 window.addEventListener("DOMContentLoaded", function () {
   [].forEach.call(document.querySelectorAll(".tel"), function (input) {
     var keyCode;
@@ -39,3 +41,38 @@ window.addEventListener("DOMContentLoaded", function () {
     input.addEventListener("keydown", mask, false);
   });
 });
+
+const phoneForm = document.getElementById("phoneForm");
+const phoneInput = document.querySelector(".tel");
+
+phoneForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  if (phoneInput.value.length < 18) {
+    maskInput(phoneInput);
+    return false;
+  }
+});
+
+// EMIAL
+const modalEmail = document.getElementById("email__form");
+const emailInput = document.getElementById("modal_email");
+
+function validate(modal_email) {
+  var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+  var address = modal_email.value;
+
+  if (reg.test(address) == false) {
+    maskInput(emailInput);
+    return false;
+  }
+}
+
+modalEmail.addEventListener("submit", (e) => {
+  e.preventDefault();
+  validate(emailInput);
+});
+
+function maskInput(el) {
+  el.setAttribute("style", "border-bottom: 2px solid #dc3545; color: #dc3545");
+  el.nextElementSibling.setAttribute("style", "display: unset");
+}

@@ -15,6 +15,8 @@
         <div class="slider__item absolute w-screen" id="mainImageSlider3"></div>
       </div>
     </div>
+    <div class="parallax__layer" id="parallax-2" data-speed="85"></div>
+
     <div
       class="parallax__layer flex align-center"
       id="parallax-1"
@@ -22,10 +24,13 @@
     >
       <div class="main-section__text flex align-center">
         <div class="vk-link w-full flex flex-center">
-          <a class="vk-link__container flex flex-center" href="https://vk.com">
-            Подпишитесь
-            <img src="@img/vk.svg" alt="Вконтакте" />
-          </a>
+          <div class="vk-link__container flex flex-center align-center">
+            <span>Подпишитесь</span>
+            <a href="#" class="vk"><img src="@img/vk.svg" alt="Вконтакте" /></a>
+            <a href="#" class="youtube"
+              ><img src="@img/youtube.svg" alt="Ютуб"
+            /></a>
+          </div>
         </div>
 
         <h1 class="title title-h1 w-full">
@@ -40,7 +45,6 @@
         </h1>
       </div>
     </div>
-    <div class="parallax__layer" id="parallax-2" data-speed="85"></div>
     <div class="parallax__layer" id="parallax-3" data-speed="65">
       <div
         class="buttons flex direction-col justyfy-between align-center z-900 w-full"
@@ -48,7 +52,7 @@
         <a
           href="#"
           class="button button--blue main-section__button button--15radius"
-          >РАССЧИТАТЬ СТОИМОСТЬ ВАШЕГО ДОМА</a
+          ><span class="scale"> РАССЧИТАТЬ СТОИМОСТЬ ВАШЕГО ДОМА<span></a
         >
         <a href="#about" class="arrow">
           <p>ПОСМОТРИТЕ НАШИ РАБОТЫ</p>

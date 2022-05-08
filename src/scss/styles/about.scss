@@ -50,6 +50,7 @@
           max-height: 563px;
           transition: max-height 10s;
           overflow-y: scroll;
+          padding-bottom: 120px;
           &::-webkit-scrollbar {
             width: 0;
           }
@@ -141,6 +142,16 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+      }
+    }
+    @media screen and (max-width: 443px) {
+      & > .title-h2 {
+        font-size: 2.3rem;
+      }
+    }
+    @media screen and (max-width: 359px) {
+      & > .title-h2 {
+        font-size: 2rem;
       }
     }
   }

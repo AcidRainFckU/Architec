@@ -12,7 +12,8 @@
 }
 #parallax-0 {
 }
-
+#parallax-2 {
+}
 #parallax-2 {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #1a1a1b 84.92%);
   height: 50%;
@@ -25,5 +26,8 @@
     height: 30%;
 
     bottom: 25px;
+  }
+  @media screen and (max-height: 761px) {
+    height: 26%;
   }
 }

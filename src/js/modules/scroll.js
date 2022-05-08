@@ -16,6 +16,14 @@ burgerClose.addEventListener("click", () => {
   handleBurgerClose();
 });
 
+burgerMenu.childNodes[1].addEventListener("click", (e) => {
+  e.stopPropagation();
+});
+
+burgerMenu.addEventListener("click", () => {
+  handleBurgerClose();
+});
+
 for (let point of menuPoints) {
   point.addEventListener("click", function (e) {
     e.preventDefault();

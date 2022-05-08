@@ -1,0 +1,90 @@
+@media only screen {
+  .loader {
+    background: #000;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 9999999999;
+    display: flex;
+    text-align: center;
+    top: 0;
+    left: 0;
+    transition: top 0.3s;
+    align-items: center;
+    .logo,
+    span {
+      margin: auto;
+      font-family: "sonos-logoregular";
+      text-align: center;
+
+      background: -webkit-linear-gradient(
+        left,
+        #000000,
+        #898989,
+        #ffffff,
+        #898989,
+        #000000
+      );
+      background: linear-gradient(
+        left,
+        #000000,
+        #898989,
+        #ffffff,
+        #898989,
+        #000000
+      );
+      background-size: 3200px 200px;
+      color: transparent;
+      -webkit-background-clip: text;
+      -webkit-animation: animate-logo;
+      -webkit-animation-delay: 0;
+      -webkit-animation-duration: 7s;
+      -webkit-animation-timing-function: linear;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-animation-fill-mode: forwards;
+    }
+
+    @-webkit-keyframes animate-logo {
+      0% {
+        background-position: 0 3200px;
+      }
+      100% {
+        background-position: 3200px 0;
+      }
+    }
+    .logo {
+      width: 492px;
+      height: 255px;
+      font-size: 14rem;
+      line-height: 180px;
+    }
+    span {
+      font-size: 0.29em;
+      letter-spacing: 2.82rem;
+      padding: 0 15px;
+      line-height: 50px;
+      display: block;
+      margin: 0;
+    }
+    @media screen and (max-width: 517px) {
+      .logo {
+        width: 305px;
+        height: 195px;
+        font-size: 9rem;
+        line-height: 137px;
+      }
+      span {
+        font-size: 0.29em;
+        letter-spacing: 1.8rem;
+        padding: 0 5px;
+        line-height: 40px;
+        display: block;
+        margin: 0;
+      }
+    }
+    &.close {
+      display: none;
+    }
+  }
+}
