@@ -4,11 +4,6 @@ const modaDialog = document.querySelectorAll(".modal__dialog");
 const modals = document.querySelectorAll(".modal");
 
 const html = document.getElementById("html");
-const text = document.getElementById("aside-phone__text");
-
-text.addEventListener("click", (e) => {
-  e.stopPropagation();
-});
 
 modalCall.forEach((el) => {
   el.addEventListener("click", (event) => {

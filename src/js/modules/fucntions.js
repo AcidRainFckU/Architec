@@ -38,3 +38,47 @@ document.addEventListener("DOMContentLoaded", function (event) {
 window.addEventListener("scroll", function () {
   headerColor();
 });
+
+// FAQ
+
+const faqQuest = document.querySelectorAll(".quest__title");
+
+faqQuest.forEach((el) => {
+  el.addEventListener("click", () => {
+    if (el.parentNode.classList.contains("open")) {
+      el.parentNode.classList.remove("open");
+    } else {
+      el.parentNode.classList.add("open");
+    }
+  });
+});
+
+// UPARROW
+
+("use strict");
+
+function trackScroll() {
+  var scrolled = window.pageYOffset;
+  var coords = document.documentElement.clientHeight;
+
+  if (scrolled > coords) {
+    upArrow.parentNode.setAttribute("style", "z-index: 9999");
+    upArrow.parentNode.classList.add("show");
+  }
+  if (scrolled < coords) {
+    upArrow.parentNode.setAttribute("style", "z-index: -1");
+    upArrow.parentNode.classList.remove("show");
+  }
+}
+
+function backToTop() {
+  if (window.pageYOffset > 0) {
+    window.scrollBy(0, -80);
+    setTimeout(backToTop, 0);
+  }
+}
+
+const upArrow = document.getElementById("upButton");
+
+window.addEventListener("scroll", trackScroll);
+upArrow.addEventListener("click", backToTop);

@@ -13,14 +13,39 @@ html {
   }
 }
 
+body {
+  background-color: #1a1a1b;
+}
+
 .title {
   font-weight: 700;
   text-transform: uppercase;
   &-h1 {
     font-size: 3.125rem;
-    max-width: 1088px;
+    padding-left: 121px;
+    max-width: 1820px;
     @media screen and (max-width: 992px) {
       font-size: 1.875rem;
+      padding-left: 50px;
+    }
+    @media screen and (max-width: 767px) {
+      padding-left: 64px;
+      font-size: 1.5625rem;
+      line-height: 30px;
+      max-width: 700px;
+
+      text-shadow: 0px 4px 4px rgba(255, 249, 249, 0.25);
+      margin-top: 15px;
+      .title__span--e9 {
+        font-size: 0.9375rem;
+
+        line-height: 18px;
+
+        text-shadow: 0px 4px 4px rgba(255, 249, 249, 0.25);
+      }
+    }
+    @media screen and (max-width: 334px) {
+      padding-left: 50px;
     }
   }
   &-h2 {
@@ -39,8 +64,9 @@ html {
     @media screen and (max-width: 992px) {
       font-size: 3.6875rem;
     }
-    @media screen and (max-width: 592px) {
-      font-size: 2.8125rem;
+    @media screen and (max-width: 767px) {
+      font-size: 25px;
+      line-height: 40px;
     }
   }
   &--white {
@@ -54,6 +80,9 @@ html {
       @media screen and (max-width: 992px) {
         font-size: 3.6875rem;
       }
+      @media screen and (max-width: 767px) {
+        font-size: 1.25rem;
+      }
     }
   }
   &__span {
@@ -66,6 +95,7 @@ html {
     &--e9 {
       color: $e9;
       text-transform: lowercase;
+      font-weight: 400;
     }
   }
   &-h3 {
@@ -125,6 +155,16 @@ html {
     max-width: 412px;
     padding: 1.3em 2em;
     box-shadow: 5px 4px 32px 6px rgba(0, 0, 0, 0.5);
+    @media screen and (max-width: 767px) {
+      max-width: 250px;
+      font-size: 0.75rem;
+      line-height: 15px;
+      text-align: center;
+      border-radius: 10px !important;
+      color: #ffffff;
+
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
   }
   &.about__button {
     font-weight: 600;
@@ -132,11 +172,31 @@ html {
     max-width: 640px;
     padding: 1.4em 0;
     margin-top: 43px;
+    @media screen and (max-width: 767px) {
+      max-width: 250px;
+      font-size: 0.75rem;
+      line-height: 15px;
+      text-align: center;
+      border-radius: 10px !important;
+      color: #ffffff;
+
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
   }
   &.stages__button {
     font-weight: 600;
     font-size: 1.5625rem;
     padding: 1.16em 0;
+    @media screen and (max-width: 767px) {
+      max-width: 250px;
+      font-size: 0.75rem;
+      line-height: 15px;
+      text-align: center;
+      border-radius: 10px !important;
+      color: #ffffff;
+
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
   }
 
   &.button-small {
@@ -144,6 +204,16 @@ html {
     font-size: 1.25rem;
     max-width: 371px;
     padding: 1.25em 0;
+    @media screen and (max-width: 767px) {
+      max-width: 250px;
+      font-size: 0.75rem;
+      line-height: 15px;
+      text-align: center;
+      border-radius: 10px !important;
+      color: #ffffff;
+
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
   }
   &.button--10radius {
     border-radius: 10px;
@@ -162,9 +232,6 @@ html {
 
 .section {
   padding: 0 20px;
-  @media screen and (max-width: 592px) {
-    padding: 0 10px;
-  }
 }
 
 .absolute-before {
@@ -203,4 +270,12 @@ html {
   height: 183px;
 }
 
+.lb-widget-panel {
+  right: 38px !important;
+  @media screen and (max-width: 992px) {
+    right: 5px !important;
+  }
+}
+
 @import "styles/{*, !globals, !vars}.scss";
+@import url("/node_modules/wow.js/css/libs/animate.css");

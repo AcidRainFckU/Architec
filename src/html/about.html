@@ -1,13 +1,15 @@
 <section id="about" class="section about scroll">
   <div class="container relative">
     <img src="@img/lines.png" class="img-background absolute z-100" />
-    <h2 class="title title-h2 relative z-200">АРХИТЕКТУРНОЕ БЮРО</h2>
+    <h2 class="title title-h2 relative z-200 wow fadeInDown">
+      АРХИТЕКТУРНОЕ БЮРО
+    </h2>
     <div class="about__container m-auto relative z-200 flex justyfy-between">
       <div class="about__text relative">
-        <h2 class="title title-h2 title--white">
+        <h2 class="title title-h2 title--white wow fadeInDown">
           ABK <span class="title--white__span">studio</span>
         </h2>
-        <p class="text" id="aboutText">
+        <p class="text wow fadeIn" id="aboutText">
           <span>
             Архитектурное бюро <b>ABK studio</b>. Архитектурное Бюро Краснова –
             молодое, современное проектное бюро. За нашими плечами реализованные
@@ -37,13 +39,18 @@
         <div class="absolute shadow" id="aboutShadow"></div>
       </div>
       <div class="about__img flex relative">
-        <img
-          src="@img/aboutPhoto.png"
-          alt="Основатель"
-          class="absolute image"
-        />
+        <picture>
+          <source srcset="@img/aboutPhoto.webp" type="image/webp" />
+          <img
+            src="@img/aboutPhoto.png"
+            alt="Основатель"
+            class="absolute image"
+            type="image/png"
+          />
+        </picture>
+
         <div class="absolute shadow"></div>
-        <p class="img-container__text ml-auto mt-auto relative">
+        <p class="img-container__text ml-auto mt-auto relative wow flipInX">
           КРАСНОВ НИКИТА <span class="text__span">Основатель ABK studio</span>
         </p>
       </div>
@@ -51,7 +58,7 @@
     <a
       href="#"
       data-modal="#callModal"
-      class="button about__button button--15radius button--blue mx-auto relative z-300"
+      class="button about__button button--15radius button--blue mx-auto relative z-300 wow bounceIn"
       ><span class="scale"> ЗАДАТЬ ВОПРОС ЛИЧНО</span>
     </a>
   </div>
