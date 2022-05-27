@@ -4,8 +4,8 @@ const html = document.getElementById("html");
 window.onload = function () {
   html.classList.remove("no-scroll");
 
-  loader.setAttribute("style", "top: -100%");
+  loader.setAttribute("style", "top: -200%");
   setTimeout(() => {
     loader.classList.add("close");
-  }, 300);
+  }, 1100);
 };

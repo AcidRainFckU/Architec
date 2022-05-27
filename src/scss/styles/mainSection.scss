@@ -62,12 +62,10 @@
   .main-section__text {
     max-width: 1228px;
     min-height: 235px;
-    background: rgba(0, 0, 0, 0.4);
 
     .vk-link {
       min-height: 235px;
       max-width: 129px;
-      cursor: pointer;
       &__container {
         font-size: 0.8125rem;
         font-weight: 700;
@@ -75,6 +73,9 @@
         flex-direction: row-reverse;
         span {
           margin-bottom: 2px;
+          @media screen and (max-width: 767px) {
+            display: none;
+          }
         }
         a {
           & > img {
@@ -85,19 +86,44 @@
         .vk {
           margin: 0 12.9px 0 8.49px;
         }
+        @media screen and (max-width: 767px) {
+          transform: none;
+          flex-direction: column;
+          a {
+            & > img {
+              transform: none;
+              margin: auto;
+            }
+          }
+        }
       }
       @media screen and (max-width: 992px) {
         max-width: 50px;
         white-space: nowrap;
       }
+      @media screen and (max-width: 767px) {
+        max-width: 64px;
+        margin-top: 40px;
+        align-items: flex-start;
+        .vk {
+          margin: 0 0 23.75px 0;
+        }
+      }
+      @media screen and (max-width: 334px) {
+        max-width: 50px;
+      }
     }
   }
   .buttons {
+    max-height: 370px;
     height: 100%;
+    margin-top: auto;
+    margin-bottom: 5px;
 
     .arrow {
       max-height: 79px;
       text-align: center;
+
       p {
         transition: transform 0.3s;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -120,7 +146,15 @@
       }
     }
 
-    @media screen and (max-width: 430px), (max-height: 736px) {
+    @media screen and (max-width: 1485px) {
+      max-height: 400px;
+    }
+    @media screen and (max-width: 992px) {
+      max-height: 370px;
+    }
+    @media screen and (max-width: 767px) {
+      max-height: 246px;
+
       .arrow {
         display: none;
       }

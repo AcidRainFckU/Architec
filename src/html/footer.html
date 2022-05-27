@@ -1,35 +1,46 @@
 <footer id="contacts" class="footer scroll">
-  <div class="container">
-    <div class="footer__container flex justyfy-between">
-      <div class="footer__logo-container">
-        <a href="/" class=""
-          ><img src="@img/logo.png" class="footer__logo" alt="ABK studio"
-        /></a>
-
-        <p class="logo__text">
-          ARCHITECTURAL <br />
-          BUREAU <br />OF KRASNOV<br />
-          <span>
-            +7 - 981-159-31-10<br />
-            ABKstudio.spb@yandex.ru</span
-          >
-        </p>
-        <a href="#" class="text__us"> ПИШИТЕ</a>
+  <div class="image__wrapper relative"></div>
+  <div class="container relative">
+    <picture>
+      <source srcset="@img/logo.webp" type="image/webp" />
+      <img
+        src="@img/logo.jpg"
+        alt="logo"
+        class="image absolute transform-center"
+      />
+    </picture>
+    <div class="footer__contacts flex justyfy-between align-end">
+      <ul class="list list">
+        <li>ARCHITECTURAL</li>
+        <li>BUREAU OF</li>
+        <li>KRASNOV</li>
+        <li>+7 - 981-159-31-10</li>
+        <li>ABKstudio.spb@yandex.ru</li>
+      </ul>
+      <div class="links">
+        Подписывайся
+        <div class="links__container flex justyfy-between align-center">
+          <a
+            href="https://www.youtube.com/channel/UCZhQgT6Rz5_f1WnEfFYpDsQ"
+            class="youtube"
+            ><img src="@img/youtube.svg" alt="Ютуб"
+          /></a>
+          <a href="https://vk.com/abk_spb" class="vk"
+            ><img src="@img/vk.svg" alt="Вконтакте"
+          /></a>
+        </div>
       </div>
-      <div class="footer__menu">
-        <ul>
-          <li><a href="#cases">Проекты</a></li>
-          <li><a href="#price">Цены</a></li>
-          <li><a href="#contacts">Контакты</a></li>
-        </ul>
-      </div>
-      <div class="email__feedback">
-        <from class="footer__mail flex direction-col">
-          <h4 class="title title-h4">Subcribe for Offers</h4>
-          <input type="text" class="email__input" placeholder="Email Address" />
-          <input type="submit" class="email__button" value="Subcribe  Now" />
-        </from>
-      </div>
+      <ul class="list list--right">
+        <li>АРХИТЕКТУРНОЕ</li>
+        <li>БЮРО</li>
+        <li>КРАСНОВА</li>
+        <li>+7 - 981-159-31-10</li>
+        <li>ABKstudio.spb@yandex.ru</li>
+      </ul>
+    </div>
+    <div class="footer__save flex justyfy-between">
+      <p>© 2020, ABK studio. Все права защищены</p>
+      <p>Политика в отношении обработки персональных данных</p>
     </div>
   </div>
 </footer>

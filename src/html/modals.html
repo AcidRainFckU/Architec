@@ -19,7 +19,15 @@
         >
       </div>
       <div class="timer mx-auto flex align-center">
-        <img class="timer__image" src="@img/timer.png" alt="Сколько осталось" />
+        <picture>
+          <source srcset="@img/timer.webp" type="image/webp" />
+          <img
+            class="timer__image"
+            src="@img/timer.png"
+            alt="Сколько осталось"
+          />
+        </picture>
+
         <p class="timer__counter">0:30.00</p>
       </div>
       <a class="modal__time-choose" href="#"
@@ -37,13 +45,20 @@
     </div>
     <div class="modal__container flex direction-col">
       <div class="modal-call__img img__container relative">
-        <img
-          src="@img/sldie2.jpg"
-          alt="Основатель"
-          class="img absolute transformx-center"
-        />
+        <picture>
+          <source srcset="@img/sldie2.webp" type="image/webp" />
+          <img
+            src="@img/sldie2.jpg"
+            alt="Основатель"
+            class="img absolute transformx-center"
+          />
+        </picture>
+
         <div class="background absolute"></div>
-        <img src="@img/logo.png" class="logo absolute transformx-center" />
+        <picture>
+          <source srcset="@img/logo.webp" type="image/webp" />
+          <img src="@img/logo.png" class="logo absolute transformx-center" />
+        </picture>
       </div>
       <form
         class="modal-call__text flex direction-col align-center"
@@ -53,6 +68,7 @@
         <input
           class="user_name input--text"
           type="text"
+          name="phone_name"
           required
           placeholder="Как к вам обращаться?"
         />
@@ -61,6 +77,7 @@
             class="phone_number input--text tel"
             type="text"
             required
+            name="phone_phone"
             placeholder="+7 (999) 999-99-99"
           />
           <span>Поле заполнено некорректно</span>
@@ -86,13 +103,20 @@
     </div>
     <div class="modal__container flex direction-col">
       <div class="modal-call__img img__container relative">
-        <img
-          src="@img/sldie2.jpg"
-          alt="Основатель"
-          class="img absolute transformx-center"
-        />
+        <picture>
+          <source srcset="@img/sldie2.webp" type="image/webp" />
+          <img
+            src="@img/sldie2.jpg"
+            alt="Основатель"
+            class="img absolute transformx-center"
+          />
+        </picture>
+
         <div class="background absolute"></div>
-        <img src="@img/logo.png" class="logo absolute transformx-center" />
+        <picture>
+          <source srcset="@img/logo.webp" type="image/webp" />
+          <img src="@img/logo.png" class="logo absolute transformx-center" />
+        </picture>
       </div>
       <form
         id="email__form"
@@ -102,6 +126,7 @@
         <input
           class="user_name input--text"
           type="text"
+          name="email__name"
           required
           placeholder="Как к вам обращаться?"
         />
@@ -109,6 +134,7 @@
           <input
             class="phone_number input--text mail"
             id="modal_email"
+            name="email__email"
             type="text"
             required
             placeholder="example@example.com"
@@ -136,7 +162,11 @@
     </div>
     <div class="modal__container flex direction-col">
       <div class="modal-politics__img modal__logo flex">
-        <img src="@img/logo.png" alt="Основатель" class="img m-auto" />
+        <picture>
+          <source srcset="@img/logo.webp" type="image/webp" />
+
+          <img src="@img/logo.png" alt="Основатель" class="img m-auto" />
+        </picture>
       </div>
       <div class="modal-politics__text mx-auto">
         <div class="modal-politics__text-container mx-auto">
@@ -275,5 +305,90 @@
         </div>
       </div>
     </div>
+  </div>
+</div>
+
+<!-- BIM -->
+<div class="modal flex modal-bim" id="bim">
+  <div class="modal__dialog m-auto relative">
+    <div class="modal__close absolute">
+      <div class="relative close__container"></div>
+    </div>
+    <div class="modal__container flex direction-col">
+      <div class="modal-bim__img modal__logo flex">
+        <picture>
+          <source srcset="@img/bim.webp" type="image/webp" />
+          <img src="@img/bim.jpg" alt="bim" />
+        </picture>
+      </div>
+      <div class="modal-bim__text mx-auto">
+        <div class="modal-bim__text-container">
+          BIM — (Building Information Modeling или Building Information Model —
+          информационное моделирование здания или информационная модель здания)
+          — это цифровое представление физических и функциональных характеристик
+          объекта, которое охватывает более чем просто геометрию здания. BIM
+          учитывает множество факторов и информацию об объекте, отдельных его
+          элементах (даже деталей производителей), географии, дизайне и других
+          данных, в том числе влияние его на окружающую среду и наоборот. Все
+          эти данные наряду с технико-экономическими показателями и другими
+          характеристиками объекта формируют такую информационную модель, в
+          которой изменение одного параметра приводит к автоматическому
+          перерасчету всех остальных. <br />
+          <br />
+
+          BIM — это общий ресурс знаний для получения информации об объекте,
+          служит основой для принятия решений в течение его жизненного цикла,
+          который определяется как существующий от самой ранней концепции до
+          сноса. Основой взаимодействия является информационная модель объекта
+          строительства (BIM-модель), с помощью которой происходит комплексное
+          взаимодействие участвующих сторон на всех стадиях жизненного цикла
+          объекта. BIM позволяет передавать виртуальную информационную модель от
+          команды разработчиков (архитекторы, ландшафтные архитекторы, инженеры,
+          строители и т. д.) генподрядчику и субподрядчикам, а затем владельцам
+          или управляющим объекта.
+        </div>
+        <div class="modal-bim__text-container">
+          Среди задач, которые решает BIM на стадиях сопровождения
+          инвестиционных проектов, можно выделить основные:<br />
+          <br />
+
+          подготовка проектного предложения;<br />
+          финансово-техническая экспертиза и аудит инвестиционных проектов;<br />
+          финансово-технический надзор;<br />
+          управление проектами;<br />
+          экологический консалтинг, экологическая независимая экспертиза и
+          экологический аудит проектов;<br />
+          проверка сметных расчетов;<br />
+          проверка обоснованности затрат;<br />
+          техническая экспертиз<br />
+          <br />
+
+          Применении BIM-технологии при мониторинге инвестпроектов позволяет
+          повысить качество, сделать работу над проектом прозрачной, сам проект
+          более управляемым, что поможет экономить средства. По оценке Минстроя,
+          эффект от этой технологии снижает до 40% вероятность ошибок и
+          погрешностей в проектной документации в сравнении с традиционными
+          методами проектирования, на 20–50% сократит время на проектирование, в
+          шесть раз уменьшит время на проверку проекта, до 90% сократит сроки
+          координации и согласования проекта. Также, по данным Минстроя, BIM
+          позволит в четыре раза снизить погрешности бюджета при планировании,
+          сократить сроки инвестиционной фазы проекта до 50%, сроки
+          строительства — на 20–50%, затраты на строительство и эксплуатацию —
+          до 30%.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- QUIZ -->
+<div class="modal flex modal-quiz" id="quiz">
+  <div class="modal__dialog m-auto relative">
+    <img
+      src="@img/icons8-close.svg"
+      alt="Закрыть модельное окно"
+      class="modal__close absolute"
+    />
+    <iframe class="frame_modal" src="quiz.html" frameborder="0"></iframe>
   </div>
 </div>

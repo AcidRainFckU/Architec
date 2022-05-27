@@ -36,7 +36,6 @@
     "gulp-util": "latest",
     "gulp-version-number": "latest",
     "gulp-webp": "latest",
-    "gulp-webp-html-nosvg": "latest",
     "gulp-webpcss": "latest",
     "gulp-zip": "latest",
     "sass": "latest",
@@ -46,6 +45,7 @@
     "webpack-stream": "latest"
   },
   "dependencies": {
-    "gulp-cli": "^2.3.0"
+    "gulp-cli": "^2.3.0",
+    "wow.js": "^1.2.2"
   }
 }

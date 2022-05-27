@@ -15,6 +15,11 @@
         max-width: unset;
         padding: 0 150px;
       }
+      @media screen and (max-width: 767px) {
+        font-size: 0.75rem;
+        line-height: 15px;
+        text-align: justify;
+      }
     }
     .sign {
       font-weight: 300;
@@ -28,6 +33,20 @@
         display: block;
         max-height: 30px;
         margin-right: 15px;
+      }
+      @media screen and (max-width: 767px) {
+        font-size: 0.75rem;
+        line-height: 15px;
+        .signImage {
+          max-width: 208px;
+          max-height: 71px;
+        }
+        span {
+          margin-top: auto;
+          margin-right: auto;
+          margin-left: 0;
+          margin-bottom: 0;
+        }
       }
     }
   }
@@ -45,20 +64,13 @@
       }
     }
   }
-  @media screen and (max-width: 698px) {
+  @media screen and (max-width: 767px) {
+    padding-bottom: 26px;
+    padding-top: 10px;
+  }
+  @media screen and (max-width: 767px) {
     .container {
-      .sign {
-        flex-direction: column;
-        margin-top: 25px;
-        span {
-          max-width: 170px;
-          margin: 0 0 15px;
-          margin-left: auto;
-        }
-        img {
-          margin-left: 30px;
-        }
-      }
+      max-width: 322px;
     }
   }
 }

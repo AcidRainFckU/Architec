@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru" id="html" class="no-scroll">
-  @@include('html/head.html', { "title": "ABKStudio" })
+  @@include('html/head.html', { "title": "ABKSTUDIO" })
   <body>
     @@include('html/header.html') @@include('html/aside.html')
     @@include('html/modals.html')
@@ -10,10 +10,27 @@
         <!-- Проверить теорию с буквой a -->
         @@include('html/about.html') @@include('html/mission.html')
         @@include('html/cases.html') @@include('html/stages.html')
-        @@include('html/proud.html') @@include('html/footer.html')
+        @@include('html/proud.html') @@include('html/faq.html')
+        @@include('html/footer.html')
       </div>
     </main>
 
+    <!-- Begin LeadBack code {literal} -->
+    <!-- <script>
+      var _emv = _emv || [];
+      _emv["campaign"] = "cfcbb2d417d79790e485ed7b";
+
+      (function () {
+        var em = document.createElement("script");
+        em.type = "text/javascript";
+        em.async = true;
+        em.src =
+          ("https:" == document.location.protocol ? "https://" : "http://") +
+          "leadback.ru/js/leadback.js";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(em, s);
+      })();
+    </script> -->
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/app.min.js"></script>
   </body>

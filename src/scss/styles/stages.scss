@@ -1,5 +1,5 @@
 .workStages {
-  padding: 0;
+  padding: 0 !important;
   .container {
     .stages__title {
       margin-bottom: 20px;
@@ -14,15 +14,15 @@
 
         .stage___container {
           max-height: 220px;
-          transition: max-height 0.9s linear 0s;
+          transition: max-height 0.9s linear;
 
           overflow: hidden;
           align-items: flex-start;
           grid-template-columns: 1fr minmax(100px, 757px);
+          grid-template-rows: 250px max-content;
           column-gap: 100px;
           row-gap: 20px;
 
-          grid-template-rows: max-content max-content max-content;
           grid-template-areas:
             "title stage-text"
             "stage-image stage-text";
@@ -30,25 +30,18 @@
             column-gap: 50px;
           }
           @media screen and (max-width: 1592px) {
-            max-height: 420px;
+            max-height: unset;
+            max-width: 1152px;
+            margin: auto;
             column-gap: 0;
-            row-gap: 20px;
-
+            row-gap: 15px;
+            grid-template-rows: max-content max-content max-content;
             justify-items: center;
             grid-template-columns: 1fr;
             grid-template-areas:
               "title"
-              "stage-text"
-              "stage-image";
-          }
-          @media screen and (max-width: 797px) {
-            max-height: 360px;
-          }
-          @media screen and (max-width: 576px) {
-            max-height: 400px;
-          }
-          @media screen and (max-width: 544px) {
-            max-height: 450px;
+              "stage-image"
+              "stage-text";
           }
 
           .stage__title {
@@ -68,8 +61,13 @@
                   img {
                     margin-right: 11px;
                   }
-                  @media screen and (max-width: 576px) {
-                    font-size: 1.3rem;
+                  @media screen and (max-width: 767px) {
+                    font-size: 0.9375rem;
+                    line-height: 18px;
+                    img {
+                      width: 23.16px;
+                      height: 23.16px;
+                    }
                   }
                 }
                 .title-h3__span {
@@ -79,6 +77,9 @@
                   line-height: 37px;
                   color: #dfaa5b;
                   margin-top: 10px;
+                }
+                @media screen and (max-width: 767px) {
+                  font-size: 1.25rem;
                 }
               }
               .stage__count {
@@ -101,20 +102,21 @@
                     height: 115px;
                   }
                 }
-                @media screen and (max-width: 544px) {
-                  min-width: 65px;
-                  height: 65px;
+                @media screen and (max-width: 767px) {
+                  min-width: 55px;
+                  height: 54px;
+
                   font-size: 3.125rem;
                   margin-right: 0;
                   justify-content: center;
-                  margin-bottom: 30px;
+                  margin-bottom: 13px;
                   .lines {
-                    width: 65px;
-                    height: 65px;
+                    width: 55px;
+                    height: 54px;
                   }
                 }
               }
-              @media screen and (max-width: 544px) {
+              @media screen and (max-width: 767px) {
                 flex-direction: column;
                 text-align: center;
                 margin: 0 auto;
@@ -126,21 +128,64 @@
           }
           .stage-text___container {
             grid-area: stage-text;
-            margin-left: 10px;
-
+            width: 100%;
             .stage__text {
               margin-top: 33px;
               line-height: 24px;
               font-weight: 300;
               font-size: 1.25rem;
               width: 100%;
-              transition: max-height 0.9s linear 0s;
+              transition: max-height 0.9s linear;
 
               max-height: 121px;
               overflow-y: hidden;
               text-align: justify;
+              .text__item {
+              }
+              .list {
+                & > li {
+                  span {
+                    position: relative;
+                    padding-left: 36px;
+                    &::before {
+                      content: "✔";
+                      position: absolute;
+                      left: 0;
+                      top: 50%;
+                      transform: translateY(-50%);
+                    }
+                    @media screen and (max-width: 767px) {
+                      padding-left: 20px;
+                    }
+                  }
+                  .list--inserted {
+                    & > li {
+                      position: relative;
+                      padding-left: 30px;
+                      &::before {
+                        content: "";
+                        position: absolute;
+                        left: 14px;
+                        top: 8px;
+                        width: 2px;
+                        height: 2px;
+                        background-color: #fff;
+                        border-radius: 50%;
+                      }
+                    }
+                  }
+                }
+              }
+              .link {
+                color: #4063bf;
+              }
               @media screen and (max-width: 544px) {
-                text-align: center;
+                text-align: start;
+              }
+              @media screen and (max-width: 767px) {
+                font-size: 0.75rem;
+                max-height: 117px;
+                text-align: start;
               }
             }
             .text__button {
@@ -151,54 +196,38 @@
               font-weight: 300;
 
               font-size: 1.25rem;
+              @media screen and (max-width: 767px) {
+                font-size: 0.75rem;
+              }
             }
           }
           .stage-image {
             grid-area: stage-image;
             width: 100%;
-            transition: opacity 0.8s linear 0s;
+            transition: opacity 0.8s linear;
             opacity: 0;
-          }
-        }
-        @media screen and (min-width: 1201px) {
-          &:hover {
-            .stage___container {
-              transition: max-height 0.2s;
-              max-height: 250px;
-              .stage-text___container {
-                transition: max-height 0.2s;
-
-                .stage__text {
-                  max-height: 170px;
-                }
-              }
+            @media screen and (max-width: 1592px) {
+              opacity: 1;
             }
           }
-
-          @media screen and (max-width: 1593px) {
-            &:hover {
-              .stage___container {
-                max-height: 500px;
-                .stage-text___container {
-                  .stage__text {
-                    max-height: 195px;
-                  }
-                }
-              }
-            }
+          @media screen and (max-width: 767px) {
+            max-width: 324px;
           }
         }
 
         &.open {
           .stage___container {
-            max-height: 500vh;
+            max-height: 500vh !important;
+            @media screen and (max-width: 1592px) {
+              max-height: unset !important;
+            }
             .stage-text___container {
               .stage__text {
-                max-height: 500vh;
+                max-height: 500vh !important;
               }
             }
             .stage-image {
-              opacity: 100%;
+              opacity: 100% !important;
             }
           }
         }
@@ -206,6 +235,13 @@
           padding: 35px 0;
         }
       }
+    }
+  }
+  @media screen and (max-width: 767px) {
+    padding-top: 15px !important;
+    .button {
+      max-width: unset;
+      border-radius: 0px !important;
     }
   }
 }
