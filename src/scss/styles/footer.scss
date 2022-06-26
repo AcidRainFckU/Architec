@@ -7,8 +7,10 @@
     min-height: 563px;
     overflow: hidden;
     background: center / cover no-repeat fixed url("../img/footer.jpg");
+
     @media screen and (max-width: 767px) {
       min-height: 137px;
+      background: center / cover no-repeat local url("../img/footer.jpg");
     }
   }
   .container {

@@ -1322,7 +1322,7 @@ li {
 .loader .big,
 .loader .min {
   font-family: "Neothic";
-  background: -webkit-gradient(linear, left top, right top, from(#000000), color-stop(#898989), color-stop(#ffffff), color-stop(#898989), to(#000000));
+  background: -webkit-linear-gradient(left, #000000, #898989, #ffffff, #898989, #000000);
   background: -o-linear-gradient(left, #000000, #898989, #ffffff, #898989, #000000);
   background: linear-gradient(left, #000000, #898989, #ffffff, #898989, #000000);
   background-size: 3200px 200px;
@@ -2833,6 +2833,9 @@ li {
     padding-top: 21px;
   }
 
+  .no-webp .footer .image__wrapper{
+    background: center/cover no-repeat local url("../img/footer.jpg"); }
+
   .footer .image__wrapper {
     min-height: 137px;
   }
@@ -3306,3 +3309,8 @@ li {
 .webp .main-section .parallax__slider .slider__container .slider__item#mainImageSlider2{ background-image: url(../img/sldie3.webp); }
 
 .webp .main-section .parallax__slider .slider__container .slider__item#mainImageSlider3{ background-image: url(../img/sldie1.webp); }
+
+@media screen and (max-width: 767px){
+
+  .webp .footer .image__wrapper{ background: center/cover no-repeat local url(../img/footer.webp); }
+}
